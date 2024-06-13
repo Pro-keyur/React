@@ -21,7 +21,7 @@ function Login() {
                     if (data.token) {
                         localStorage.setItem("token", data.token);
                         document.getElementById("msg").textContent ="Login Successfully"
-                        navigate("/product")
+                        navigate("/products")
                     } else {
                         localStorage.removeItem("token");
                         document.getElementById("msg").textContent ="Invalid user"
