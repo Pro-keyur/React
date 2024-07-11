@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import {signInWithEmailAndPassword} from "firebase/auth";
-import {auth} from "../Service/firebase";
-
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../Service/firebase";
 const Login = () => {
   const [email, setemail] = useState("");
   const [password, setpassword] = useState("");
@@ -16,7 +15,7 @@ const Login = () => {
   return (
     <div>
       <h1>Login</h1>
-      <form action="" onSubmit={(e)=>handlesubmit(e)}>
+      <form action="" onSubmit={(e) => handlesubmit(e)}>
         <input
           onChange={(e) => setemail(e.target.value)}
           type="text"
