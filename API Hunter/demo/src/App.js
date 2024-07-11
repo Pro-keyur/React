@@ -1,12 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import AllRoutes from "./Routes/AllRoutes";
+import "./styles.css";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <h1>keyur</h1>
+      <AllRoutes />
     </div>
   );
 }
 
-export default App;
+
